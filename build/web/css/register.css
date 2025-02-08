@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Caramel&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Caramel', cursive;
+} 
+body{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-repeat: no-repeat;
+}
+.box{
+    margin-top: 30px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    background-color: #fff;
+    padding: 32px;
+    width: 200px;
+    min-height: 300px;
+    border-radius: 6px;
+    box-shadow: rgba(0,0,0,0.12) 0px 1px 3px,rgba(0,0,0,0.24) 0px 1px 2px;
+}
+.form-title{
+    font-weight: 700;
+    margin-bottom: 17px;
+    text-align: center;
+    font-size: 30px;
+}
+.form-group{
+    height: 48px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.form-group input{
+    font-size: 20px;
+}
+.form-control{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: 1px solid #a1a1a1;
+    outline: none;
+    padding: 16px;
+    border-radius: 3px;
+    z-index: 1;
+}
+.form-label{
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    border: none;
+    color: #a1a1a1;
+    background-color: white;
+    padding: 0 6px;
+    font-size: 18px;
+    transition: .3s;
+    z-index: 1;
+}
+.form-control:focus+.form-label{
+    top:-11px;
+    z-index: 12;
+    color: #1B66C9;
+    font-weight: 500;
+}
+.form-control:focus{
+    border: 2px solid #1B66C9;
+}
+.form-control:not(:focus):valid+label{
+    top: -11px;
+    z-index: 100;
+}
+.showLabel{
+    font-size: 18px;
+}
+.button-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+.button-box a{
+    text-decoration: none;
+    color: #1B66C9;
+    font-size: 25px;
+    font-weight: 500;
+}
+.showLabel{
+    font-size: 25px;
+}
+.form-button{
+    display: flex;
+    padding: 10px 25px;
+    border: none;
+    background-color: #1B66C9;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: .3s;
+    margin-left: 64px;
+}
+.sample{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.sample-btn{
+    padding: 2px 20px;
+    border: none;
+    background-color: #1B66C9;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+.int{
+    border: none;
+    outline: none;
+    width: 90px;
+    padding-left: 10px;
+    color: rgb(155, 197, 239);
+    font-size: 25px;
+    font-weight: 400;
+}
+.form-button:hover{
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+.form-button a{
+    color: #fff;
+}
+.form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25px;
+    border: none;
+    background-color: #1B66C9;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: .3s;
+    margin-left: 30px;
+}
+.error{
+    text-align: center;
+    color: red;
+    margin: 15px;
+}
+@media (max-width:450px){
+    .form{
+        margin-left: 20px;
+    }
+}
